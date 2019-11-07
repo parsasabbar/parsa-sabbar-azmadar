@@ -1,0 +1,12 @@
+module reg8b(input clk,input[7:0] regin,output[7:0]regout);
+  dff reg80(regin[0],clk,regout[0]);
+  dff reg81(regin[1],clk,regout[1]);
+  dff reg82(regin[2],clk,regout[2]);
+  dff reg83(regin[3],clk,regout[3]);
+  dff reg84(regin[4],clk,regout[4]);
+  dff reg85(regin[5],clk,regout[5]);
+  dff reg86(regin[6],clk,regout[6]);
+  dff reg87(regin[7],clk,regout[7]);
+endmodule
+
+
