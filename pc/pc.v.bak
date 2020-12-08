@@ -1,0 +1,15 @@
+module pc(input clk,input [63:0] pc1,output [63:0] pc2);
+  reg8b pcc0(clk,pc1[7:0],pc2[7:0]);
+  reg8b pcc1(clk,pc1[15:8],pc2[15:8]);
+  reg8b pcc2(clk,pc1[23:16],pc2[23:16]);
+  reg8b pcc3(clk,pc1[31:24],pc2[31:24]);
+  reg8b pcc4(clk,pc1[39:32],pc2[39:32]);
+  reg8b pcc5(clk,pc1[47:40],pc2[47:40]);
+  reg8b pcc6(clk,pc1[55:48],pc2[55:48]);
+  reg8b pcc7(clk,pc1[63:56],pc2[63:56]);
+endmodule
+  
+
+
+
+
